@@ -50,11 +50,7 @@ export default function App() {
           </li>)}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
-        <br />
-        <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
-          Review next steps of this tutorial.
-        </a>
+        <h1>Going to figure this out</h1>
       </div>
       <button onClick={signOut}>Sign out</button>
     </main>
