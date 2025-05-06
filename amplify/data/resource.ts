@@ -7,9 +7,12 @@ specifies that any user authenticated via an API key can "create", "read",
 "update", and "delete" any "Todo" records.
 =========================================================================*/
 const schema = a.schema({
-  Todo: a
+  Contacts: a
     .model({
-      content: a.string(),
+      id: a.id(),
+      name: a.string(),
+      phone: a.integer(),
+      email: a.email()
     })
     .authorization((allow) => [allow.owner()]),
 });
